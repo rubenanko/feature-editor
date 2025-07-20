@@ -1,0 +1,6 @@
+{
+    "WHEN":
+    {
+        "Je teste la variable : \"(.*)\"": ["variable1","variable2"]
+    }
+}
