@@ -1,5 +1,4 @@
 import { useRef,useState } from 'react';
-import Select from 'react-select';
 import data from '../data.json';
 
 function format(stepData)
@@ -15,9 +14,9 @@ function Step(){
     
     return (
         <div style={{"display": "flex"}}>
-            <Select onChange={(value) => {setStepOptions(format(data[value.value]))}} placeholder="Type" options={stepTypes}/>
+            {/* <Select onChange={(value) => {setStepOptions(format(data[value.value]))}} placeholder="Type" options={stepTypes}/> */}
             {/* <Select onChange={(value) => {setStepOptions(Object.keys(data[value.value]).map(value => {return {"label" : value}}))}} placeholder="Type" options={stepTypes}/> */}
-            <Select options={stepOptions} />
+            {/* <Select options={stepOptions} /> */}
         </div>
     )
 }
